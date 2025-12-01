@@ -1,5 +1,5 @@
 rem вероятно нужны admin права для создания junction
-wsl rsync -avz --delete ^
+wsl rsync -avLz --delete ^
   --exclude=/proc ^
   --exclude=/sys ^
   --exclude=/dev ^
@@ -13,11 +13,11 @@ wsl rsync -avz --delete ^
   --exclude=/sbin ^
   --exclude=/usr/sbin ^
   --exclude=/usr/games ^
-  --exclude=/usr/share ^
   --exclude=/usr/local/Trolltech ^
   --exclude=/var ^
   --exclude=/boot ^
   --exclude=/etc ^
+  --exclude=/lib ^
   --exclude=/srv ^
   --exclude=/home ^
   --exclude=/root ^
