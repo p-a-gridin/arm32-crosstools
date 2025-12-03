@@ -9,10 +9,12 @@ wsl rsync -avLz --delete ^
   --exclude=/media ^
   --exclude=/lost+found ^
   --exclude=/bin ^
+  --exclude=/opt ^
   --exclude=/usr/bin ^
   --exclude=/sbin ^
   --exclude=/usr/sbin ^
   --exclude=/usr/games ^
+  --exclude=/usr/share ^
   --exclude=/usr/local/Trolltech ^
   --exclude=/var ^
   --exclude=/boot ^

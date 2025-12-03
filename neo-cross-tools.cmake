@@ -26,7 +26,7 @@ set(CMAKE_SYSROOT C:/SysGCC/raspberry/arm-linux-gnueabihf/sysroot)
 
 include_directories(C:/SysGCC/nanopi-neo/include)
 
-# иногда не работает: link_directories(C:/SysGCC/nanopi-neo/lib)
+# РёРЅРѕРіРґР° РЅРµ СЂР°Р±РѕС‚Р°РµС‚: link_directories(C:/SysGCC/nanopi-neo/lib)
 list(APPEND TBB_LIBS C:/SysGCC/nanopi-neo/lib/libtbb.so C:/SysGCC/nanopi-neo/lib/libtbbmalloc.so)
 list(APPEND MODBUS_LIB C:/SysGCC/nanopi-neo/lib/libmodbus.so.5)
 list(APPEND USB_LIB C:/SysGCC/nanopi-neo/lib/libusb-1.0.so)
