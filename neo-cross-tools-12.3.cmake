@@ -23,9 +23,10 @@ SET(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
 SET(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
 
 # нельзя иначе не найдёт crt1.0 при тестировании компиляторов
-set(CMAKE_SYSROOT C:/SysGCC/nanopi-neo/sysroot/nano-pi)
+#set(CMAKE_SYSROOT C:/SysGCC/nanopi-neo/sysroot/nano-pi)
 
-include_directories(C:/SysGCC/nanopi-neo/sysroot/nano-pi/usr/include)
+set(NANO_PI_SYSROOT C:/SysGCC/nanopi-neo/sysroot/nano-pi)
+include_directories(${NANO_PI_SYSROOT}/usr/include)
 
 # иногда не работает: 
 #link_directories(C:/SysGCC/nanopi-neo/sysroot/nano-pi/usr/lib)
