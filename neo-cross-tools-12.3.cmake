@@ -27,6 +27,7 @@ SET(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
 
 set(NANO_PI_SYSROOT C:/SysGCC/nanopi-neo/sysroot/nano-pi)
 include_directories(${NANO_PI_SYSROOT}/usr/include)
+include_directories(${NANO_PI_SYSROOT}/usr/include/c++/11)
 
 # иногда не работает: 
 #link_directories(C:/SysGCC/nanopi-neo/sysroot/nano-pi/usr/lib)
